@@ -1,0 +1,28 @@
+{
+  "name": "worker",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "wrangler dev --env dev --local",
+    "lint": "eslint .",
+    "type-check": "tsc -b",
+    "e2e": "playwright test --project=chromium"
+  },
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.2.0",
+    "@remix-run/cloudflare": "^1.7.6",
+    "counter-do": "*",
+    "remix-app": "*"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20221111.1",
+    "@playwright-testing-library/test": "^4.5.0",
+    "@playwright/test": "^1.28.0",
+    "cloudflare-env": "*",
+    "eslint": "^8.28.0",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
+    "typescript": "^4.9.3",
+    "wrangler": "^2.4.4"
+  }
+}
